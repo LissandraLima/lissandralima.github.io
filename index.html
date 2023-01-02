@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/assets/css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <meta
+      name="description"
+      content="App para encriptografar e descriptografar mensagens"
+    />
+    <meta name="author" content="Lissandra Ingrid" />
+    <title>Alura Crypto</title>
+  </head>
+  <body>
+    <header> 
+      <div class="container">
+      <img class="logo" src="/assets/img/logo.svg" alt="logo alura">
+      </div>
+    <main>
+      <form class="form-container">
+        <textarea class="text-input" placeholder="Digite seu texto"></textarea>
+        <div class="btn-container">
+          <div class="text-container">
+            <span class="empty-text">O texto não pode estar vazio.</span>
+            <span class="warning-text"
+              ><img
+                src="/assets/img/warning.png"
+                alt="ícone de atenção"
+              />Apenas letras minúsculas e sem acento.</span
+            >
+            <span class="delete-message">❌ Apagar</span>
+          </div>
+          <button type="submit" class="crypt-btn">Criptografar</button>
+          <button type="submit" class="decrypt-btn">Descriptografar</button>
+        </div>
+      </form>
+      <div class="result">
+        <img
+          class="person"
+          src="/assets/img/lupa.png"
+          alt="Imagem de uma pessoa com uma lupa"
+        />
+        <div class="no-message">
+          <h3>Nenhuma mensagem encontrada</h3>
+          <p>
+            Digite um texto que você deseja criptografar ou descriptografar.
+          </p>
+        </div>
+        <div class="message"></div>
+        <button type="submit" class="copy-btn">Copiar</button>
+      </div>
+    </main>
+    <script src="assets/js/crypto.js"></script>
+  </body>
+</html>
